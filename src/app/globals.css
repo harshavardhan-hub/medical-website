@@ -4,24 +4,167 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #020617; /* Slate 950 */
+  
+  --muted: #f1f5f9; /* Slate 100 */
+  --muted-foreground: #64748b; /* Slate 500 */
+  
+  --border: #e2e8f0; /* Slate 200 */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    color: var(--foreground);
+    background: var(--background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Ensure images never block scroll thread */
+  img {
+    decoding: auto;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* =====================
+   Lenis smooth scroll
+   ===================== */
+html.lenis,
+html.lenis body {
+  height: auto;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* =====================
+   Performance utilities
+   ===================== */
+
+/* Promote elements that will animate to their own compositor layer */
+.will-change-transform {
+  will-change: transform;
+}
+
+/* Marquee keyframes — use transform only (GPU) */
+@keyframes marquee {
+  from { transform: translateX(0%); }
+  to   { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+  will-change: transform;
+}
+
+/* =====================
+   Card hover effects
+   GPU-composited: transform + opacity only — NO box-shadow animation
+   ===================== */
+
+/* Product card: shadow via a pre-rendered pseudo-element that fades in.
+   This means the shadow is always painted, only opacity changes (GPU only). */
+.product-card {
+  position: relative;
+}
+
+.product-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 1rem;
+  box-shadow: 0 20px 60px -10px rgba(20, 184, 166, 0.18), 0 8px 24px -4px rgba(0,0,0,0.10);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  /* Pre-render the shadow on its own layer */
+  will-change: opacity;
+}
+
+.product-card:hover::after {
+  opacity: 1;
+}
+
+/* Product image: CSS-only scale hover — no Framer Motion needed */
+.product-img {
+  transition: transform 0.45s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: transform;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.06);
+}
+
+/* Blog image: same pattern */
+.blog-img {
+  transition: transform 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: transform;
+}
+
+.group:hover .blog-img {
+  transform: scale(1.05);
+}
+
+/* =====================
+   Team card — About page
+   ===================== */
+
+/* Team member photo: CSS-only scale (no Framer Motion whileHover) */
+.team-img {
+  transition: transform 0.5s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: transform;
+}
+
+.team-card:hover .team-img {
+  transform: scale(1.06);
+}
+
+/* =====================
+   Value card — About page
+   ===================== */
+
+/* Pre-rendered shadow that fades in on hover — no repaint, opacity only */
+.value-card {
+  position: relative;
+  /* GPU compositing prevents layout recalc when sibling cards animate */
+  isolation: isolate;
+}
+
+.value-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 50px -8px rgba(20, 184, 166, 0.15), 0 8px 20px -4px rgba(0,0,0,0.08);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  will-change: opacity;
+}
+
+.value-card:hover::after {
+  opacity: 1;
+}
+
+/* CSS-only lift on hover (replaces whileHover y:-10) */
+.value-card {
+  transition: transform 0.35s cubic-bezier(0.33, 1, 0.68, 1);
+  will-change: transform;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
 }
