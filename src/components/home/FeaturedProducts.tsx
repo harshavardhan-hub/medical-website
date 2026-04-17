@@ -7,25 +7,25 @@ const products = [
   {
     name: "Advanced BP Monitor X1",
     category: "Health Monitors",
-    price: "$89.99",
+    price: "₹2,499",
     image: "https://images.unsplash.com/photo-1584362917165-526a968579e8?auto=format&fit=crop&q=75&w=600",
   },
   {
     name: "Premium Omega-3 Fish Oil",
     category: "Supplements",
-    price: "$24.99",
+    price: "₹899",
     image: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?auto=format&fit=crop&q=75&w=600",
   },
   {
     name: "Infrared Thermometer Pro",
     category: "Medical Devices",
-    price: "$45.00",
+    price: "₹1,450",
     image: "https://images.unsplash.com/photo-1585435421671-0c16764628ce?auto=format&fit=crop&q=75&w=600",
   },
   {
     name: "Daily Multi-Vitamin Plus",
     category: "Vitamins",
-    price: "$19.50",
+    price: "₹499",
     image: "https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&q=75&w=600",
   },
 ];

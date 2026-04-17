@@ -33,7 +33,7 @@ export default function Hero() {
         {/* Next/Image for lazy + async decoding */}
         <Image
           src="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&q=80&w=1920"
-          alt="Premium Medical Facility"
+          alt="Premium Medical Facility - Totall Dawaa Bazaar Pharmacy"
           fill
           priority
           decoding="async"
@@ -63,9 +63,9 @@ export default function Hero() {
             style={{ willChange: "transform, opacity" }}
             className="text-5xl md:text-7xl font-bold tracking-tight text-foreground leading-[1.1] mb-6"
           >
-            Your health, <br />
+            Your trusted <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-medical-500 to-medical-700">
-              our masterpiece.
+              pharmacy & medical shop.
             </span>
           </motion.h1>
 
@@ -76,7 +76,7 @@ export default function Hero() {
             style={{ willChange: "transform, opacity" }}
             className="text-lg md:text-xl text-muted-foreground mb-10 max-w-xl leading-relaxed"
           >
-            Experience pharmaceutical care elevated to an art form. Genuine medicines, expert consultations, and a commitment to your well-being.
+            Welcome to Totall Dawaa Bazaar. Order medicines online and experience premium healthcare products with expert consultations tailored to your well-being.
           </motion.p>
 
           <motion.div

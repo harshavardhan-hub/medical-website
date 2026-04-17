@@ -67,7 +67,7 @@ export default function StoryValues() {
             <p>
               It started with a simple observation: patients were often confused about their
               medications and intimidated by the sterile environment of traditional pharmacies.
-              In 1998, Medicare was founded with a vision to change this narrative.
+              In 1998, Totall Dawaa Bazaar was founded with a vision to change this narrative.
             </p>
             <p>
               We completely redesigned the pharmacy experience. By creating warm, welcoming spaces

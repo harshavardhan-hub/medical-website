@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Cross, MapPin, Phone, Mail } from "lucide-react";
+import Image from "next/image";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 const FacebookIcon = () => <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>;
 const TwitterIcon = () => <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>;
@@ -13,16 +14,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-16">
           {/* Brand */}
           <div className="flex flex-col gap-6">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="bg-medical-500 text-white p-2 rounded-lg">
-                <Cross size={20} className="stroke-[2.5]" />
-              </div>
-              <span className="font-bold text-xl tracking-tight text-foreground">
-                Medicare<span className="text-medical-500">.</span>
-              </span>
+            <Link href="/" className="flex items-center relative w-[180px] h-[48px] md:w-[220px] md:h-[60px]">
+              <Image 
+                src="/TotalLogo.png" 
+                alt="Totall Dawaa Bazaar Logo" 
+                fill
+                className="object-contain object-left" 
+              />
             </Link>
             <p className="text-muted-foreground leading-relaxed">
-              Your trusted partner in health and wellness. Providing world-class pharmaceutical care and community health support since 1998.
+              Totall Dawaa Bazaar is your trusted partner in health and wellness. Providing world-class pharmaceutical care, medicines online, and healthcare products to the community since 1998.
             </p>
             <div className="flex gap-4">
               <SocialLink href="#" icon={<FacebookIcon />} />
@@ -70,7 +71,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
                 <Mail size={20} className="text-medical-500 shrink-0" />
-                <span>care@medicarepharmacy.com</span>
+                <span>care@totalldawaabazaar.com</span>
               </li>
             </ul>
           </div>
@@ -78,7 +79,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Medicare Pharmacy. All rights reserved.
+            &copy; {new Date().getFullYear()} Totall Dawaa Bazaar. All rights reserved.
           </p>
           <p className="text-sm text-muted-foreground flex items-center gap-1">
             Crafted with care for your health.

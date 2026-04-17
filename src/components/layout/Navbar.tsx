@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
-import { Cross, Menu, X, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
@@ -55,13 +56,14 @@ export default function Navbar() {
       >
         <div className="flex justify-between items-center w-full md:w-auto">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 group">
-            <div className="bg-gradient-to-br from-medical-500 to-medical-600 text-white p-1.5 md:p-2 rounded-lg md:rounded-xl group-hover:shadow-lg group-hover:shadow-medical-500/30 transition-all duration-300">
-              <Cross size={18} className="stroke-[2.5]" />
-            </div>
-            <span className="font-bold text-lg md:text-xl tracking-tight text-foreground group-hover:text-medical-600 transition-colors">
-              Medicare<span className="text-medical-500">.</span>
-            </span>
+          <Link href="/" className="flex items-center group relative w-[160px] h-[40px] md:w-[200px] md:h-[48px]">
+            <Image 
+              src="/TotalLogo.png" 
+              alt="Totall Dawaa Bazaar Logo" 
+              fill
+              className="object-contain object-left transition-transform duration-300 group-hover:scale-[1.02]"
+              priority
+            />
           </Link>
 
           {/* Mobile Toggle */}

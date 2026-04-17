@@ -72,7 +72,7 @@ export default function AppointmentCTA() {
 
               <img
                 src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=500"
-                alt="Pharmacist smiling"
+                alt="Expert Pharmacist at Totall Dawaa Bazaar Medical Shop"
                 className="w-72 h-72 object-cover rounded-full border-4 border-medical-800 shadow-2xl relative z-10 scale-x-[-1]"
                 loading="lazy"
                 decoding="async"

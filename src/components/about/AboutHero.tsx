@@ -17,8 +17,7 @@ export default function AboutHero() {
             style={{ willChange: "transform, opacity" }}
             className="text-5xl md:text-7xl font-bold tracking-tight text-foreground mb-6"
           >
-            Redefining Community <br />
-            <span className="text-medical-500">Healthcare.</span>
+            <span className="text-medical-500">Totall Dawaa Bazaar.</span>
           </motion.h1>
 
           <motion.p
@@ -50,7 +49,7 @@ export default function AboutHero() {
         <div className="w-full h-[40vh] md:h-[60vh] rounded-3xl overflow-hidden shadow-2xl">
           <img
             src="https://images.unsplash.com/photo-1587370560942-ad2a04eabb6d?auto=format&fit=crop&q=75&w=1600"
-            alt="Modern Pharmacy Interior"
+            alt="Inside Totall Dawaa Bazaar Medical Shop - Healthcare Products"
             className="w-full h-full object-cover"
             loading="lazy"
             decoding="async"

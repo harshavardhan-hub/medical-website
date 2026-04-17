@@ -12,7 +12,7 @@ const images = [
   { id: 3, category: "Team", url: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80", title: "Dr. Sarah" },
   { id: 4, category: "Our Store", url: "https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&w=800&q=80", title: "Aisles" },
   { id: 5, category: "Events", url: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80", title: "Health Camp 2023" },
-  { id: 6, category: "Moments", url: "https://images.unsplash.com/photo-1551076805-e18690c5e53b?auto=format&fit=crop&w=800&q=80", title: "Patient Care" },
+  { id: 6, category: "Moments", url: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80", title: "Patient Care" },
   { id: 7, category: "Products", url: "https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=800&q=80", title: "Supplements" },
   { id: 8, category: "Team", url: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=800&q=80", title: "Michael C." },
   { id: 9, category: "Our Store", url: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80", title: "Consultation Room" },
@@ -67,7 +67,7 @@ export default function GalleryGrid() {
             style={{ willChange: "transform, opacity" }}
             className="text-5xl font-bold text-foreground mb-6"
           >
-            Our Gallery
+            Totall Dawaa Bazaar Gallery
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

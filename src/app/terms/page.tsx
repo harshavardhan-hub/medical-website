@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const termsContent = `
 ## 1. Acceptance of Terms
-By accessing and using Medicare's services, you accept and agree to be bound by the terms and provision of this agreement.
+By accessing and using Totall Dawaa Bazaar's services, you accept and agree to be bound by the terms and provision of this agreement.
 
 ## 2. Medical Disclaimer
 The content provided on our website is for informational purposes only. It is not intended to be a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician.
@@ -44,7 +44,7 @@ export default function TermsPrivacyPage() {
     <main className="pt-32 pb-24 bg-slate-50 min-h-screen">
       <div className="container mx-auto px-6 md:px-12 max-w-6xl">
         <div className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Legal Information</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Totall Dawaa Bazaar Legal Information</h1>
           <p className="text-muted-foreground text-lg">Please read our terms and privacy guidelines carefully.</p>
         </div>
 
@@ -77,8 +77,8 @@ export default function TermsPrivacyPage() {
             <div className="mt-8 p-6 bg-medical-900 rounded-2xl text-white">
               <h3 className="font-bold mb-2">Have questions?</h3>
               <p className="text-medical-200 text-sm mb-4">Our support team is here to help clarify any legal terms.</p>
-              <a href="mailto:legal@medicare.com" className="text-medical-400 font-medium hover:text-white transition-colors text-sm">
-                legal@medicare.com
+              <a href="mailto:legal@totalldawaabazaar.com" className="text-medical-400 font-medium hover:text-white transition-colors text-sm">
+                legal@totalldawaabazaar.com
               </a>
             </div>
           </aside>
@@ -121,12 +121,14 @@ export default function TermsPrivacyPage() {
 // Simple markdown parser for the legal content
 function parseMarkdown(text: string) {
   return text
-    .split('\\n\\n')
-    .map(paragraph => {
-      if (paragraph.startsWith('## ')) {
-        return `<h2>${paragraph.replace('## ', '')}</h2>`;
+    .split('\n')
+    .filter(line => line.trim() !== '')
+    .map(line => {
+      const trimmed = line.trim();
+      if (trimmed.startsWith('## ')) {
+        return `<h2>${trimmed.replace('## ', '')}</h2>`;
       }
-      return `<p>${paragraph}</p>`;
+      return `<p>${trimmed}</p>`;
     })
     .join('');
 }

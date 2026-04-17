@@ -13,14 +13,14 @@ const benefits = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section className="py-24 bg-white overflow-hidden" style={{ contain: "layout style" }}>
       <div className="container mx-auto px-6 md:px-12 flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
 
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ type: "tween", duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ type: "tween", duration: 0.6, ease: "easeOut" }}
           style={{ willChange: "transform, opacity" }}
           className="w-full lg:w-5/12 xl:w-4/12 flex-shrink-0 relative mx-auto lg:mx-0"
         >
@@ -43,10 +43,10 @@ export default function WhyChooseUs() {
 
           {/* Floating Badge */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.8, y: 50 }}
+            initial={{ opacity: 0, scale: 0.9, y: 30 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 200, damping: 20, delay: 0.4 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ type: "tween", duration: 0.5, ease: "easeOut", delay: 0.3 }}
             style={{ willChange: "transform, opacity" }}
             className="absolute -bottom-10 -right-10 lg:-right-16 bg-white p-6 rounded-2xl shadow-xl border border-border max-w-xs"
           >
@@ -65,21 +65,21 @@ export default function WhyChooseUs() {
         {/* Content Side */}
         <div className="w-full lg:w-7/12 flex-grow lg:pl-8 xl:pl-12">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-50px" }}
             transition={{ type: "tween", duration: 0.6, ease: "easeOut" }}
             style={{ willChange: "transform, opacity" }}
             className="inline-flex items-center gap-2 text-medical-600 font-semibold uppercase tracking-wider text-sm mb-4"
           >
             <span className="w-8 h-px bg-medical-600 block" />
-            Why Choose Medicare
+            Why Choose Totall Dawaa Bazaar
           </motion.div>
 
           <motion.h2
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-50px" }}
             transition={{ type: "tween", duration: 0.6, ease: "easeOut", delay: 0.1 }}
             style={{ willChange: "transform, opacity" }}
             className="text-4xl md:text-5xl font-bold tracking-tight mb-6 text-foreground"
@@ -88,9 +88,9 @@ export default function WhyChooseUs() {
           </motion.h2>
 
           <motion.p
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, margin: "-50px" }}
             transition={{ type: "tween", duration: 0.6, ease: "easeOut", delay: 0.2 }}
             style={{ willChange: "transform, opacity" }}
             className="text-lg text-muted-foreground mb-10"
@@ -102,10 +102,10 @@ export default function WhyChooseUs() {
             {benefits.map((benefit, idx) => (
               <motion.div
                 key={idx}
-                initial={{ opacity: 0, x: 20 }}
+                initial={{ opacity: 0, x: 15 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ type: "tween", duration: 0.5, ease: "easeOut", delay: 0.3 + idx * 0.1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ type: "tween", duration: 0.4, ease: "easeOut", delay: 0.2 + idx * 0.08 }}
                 style={{ willChange: "transform, opacity" }}
                 className="flex items-start gap-4 group"
               >
