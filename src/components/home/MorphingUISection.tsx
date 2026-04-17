@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
-import { motion, useScroll, useTransform, useMotionTemplate, useReducedMotion } from "framer-motion";
+import { motion, useScroll, useTransform, useMotionTemplate, useReducedMotion, MotionValue } from "framer-motion";
 import Image from "next/image";
 
 export default function MorphingUISection() {
@@ -64,7 +64,7 @@ export default function MorphingUISection() {
   const scale2 = useTransform(scrollYProgress, [0.65, 0.85, 1], [0.95, 1, 1]);
   const y2 = useTransform(scrollYProgress, [0.65, 0.85, 1], [20, 0, 0]);
 
-  const applyTransform = (opacity: any, scale: any, y: any) => {
+  const applyTransform = (opacity: MotionValue<number>, scale: MotionValue<number>, y: MotionValue<number>) => {
     if (shouldReduceMotion) return { opacity: 1, scale: 1, y: 0, willChange: 'auto' };
     if (!isInView) return { opacity: opacity.get(), scale: scale.get(), y: y.get(), willChange: 'auto' };
     return { opacity, scale, y, willChange: 'transform, opacity' };
