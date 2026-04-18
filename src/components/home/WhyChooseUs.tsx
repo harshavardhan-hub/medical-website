@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 
 const benefits = [
-  "Over 25 years of trusted community service and healthcare excellence.",
+  "Over 15 years of trusted community service and healthcare excellence.",
   "100% licensed pharmacists available for professional consultations.",
   "Guaranteed genuine medications sourced directly from manufacturers.",
   "Express delivery within 2 hours in selected metropolitan areas.",
@@ -52,7 +52,7 @@ export default function WhyChooseUs() {
           >
             <div className="flex items-center gap-4 mb-3">
               <div className="w-12 h-12 rounded-full bg-medical-100 flex items-center justify-center text-medical-600 font-bold text-xl">
-                25+
+                15+
               </div>
               <div>
                 <h4 className="font-bold text-foreground leading-tight">Years of<br/>Experience</h4>

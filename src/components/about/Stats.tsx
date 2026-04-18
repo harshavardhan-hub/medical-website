@@ -32,7 +32,7 @@ function CountUp({ end, suffix = "", duration = 2 }: { end: number, suffix?: str
 
 export default function Stats() {
   const stats = [
-    { num: 25, suffix: "+", label: "Years Experience" },
+    { num: 15, suffix: "+", label: "Years Experience" },
     { num: 50, suffix: "k+", label: "Happy Patients" },
     { num: 15, suffix: "k+", label: "Products Available" },
     { num: 100, suffix: "%", label: "Genuine Quality" },

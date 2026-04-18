@@ -12,16 +12,16 @@ export const metadata: Metadata = {
   description: "Totall Dawaa Bazaar is your trusted partner in health and wellness. World-class pharmacy services, healthcare products, and medicines online.",
   keywords: "medical shop, pharmacy, medicines online, healthcare products, Totall Dawaa Bazaar, pharmacy near me, health and wellness",
   alternates: {
-    canonical: "https://www.totalldawaabazaar.com/",
+    canonical: "https://www.edawabazar.com/",
   },
   openGraph: {
     title: "Totall Dawaa Bazaar | Premium Medical Shop & Pharmacy",
     description: "Totall Dawaa Bazaar is your trusted partner in health and wellness. World-class pharmacy services, healthcare products, and medicines online.",
-    url: "https://www.totalldawaabazaar.com",
+    url: "https://www.edawabazar.com",
     siteName: "Totall Dawaa Bazaar",
     images: [
       {
-        url: "https://www.totalldawaabazaar.com/TotalLogo.png",
+        url: "https://www.edawabazar.com/TotalLogo.png",
         width: 1200,
         height: 630,
         alt: "Totall Dawaa Bazaar Logo",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Totall Dawaa Bazaar | Premium Medical Shop & Pharmacy",
     description: "Totall Dawaa Bazaar is your trusted partner in health and wellness. World-class pharmacy services, healthcare products, and medicines online.",
-    images: ["https://www.totalldawaabazaar.com/TotalLogo.png"],
+    images: ["https://www.edawabazar.com/TotalLogo.png"],
   },
 };
 
@@ -50,17 +50,17 @@ export default function RootLayout({
           "@context": "https://schema.org",
           "@type": "MedicalBusiness",
           "name": "Totall Dawaa Bazaar",
-          "image": "https://www.totalldawaabazaar.com/TotalLogo.png",
+          "image": "https://www.edawabazar.com/TotalLogo.png",
           "description": "Your trusted partner in health and wellness. World-class pharmacy services and medicines online at Totall Dawaa Bazaar.",
-          "url": "https://www.totalldawaabazaar.com",
-          "telephone": "+1-800-123-4567",
+          "url": "https://www.edawabazar.com",
+          "telephone": ["+91 7880008860", "+91 9826798175"],
+          "email": "tlcdindore@gmail.com",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "123 Health Avenue",
-            "addressLocality": "Medical District",
-            "addressRegion": "NY",
-            "postalCode": "10001",
-            "addressCountry": "US"
+            "streetAddress": "64 EC Scheme No 94, Bombay Hospital Square, Ring Road",
+            "addressLocality": "Indore",
+            "addressRegion": "MP",
+            "addressCountry": "IN"
           }
         })}} />
         <Navbar />

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CalendarCheck, PhoneCall } from "lucide-react";
+import { PhoneCall } from "lucide-react";
 
 export default function AppointmentCTA() {
   return (
@@ -43,14 +43,14 @@ export default function AppointmentCTA() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-medical-500 hover:bg-medical-400 text-white px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 transition-colors active:scale-95">
-                  <CalendarCheck size={20} />
-                  Book Consultation
-                </button>
-                <button className="bg-transparent border border-medical-500 text-white hover:bg-medical-800 px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 transition-colors active:scale-95">
+                <a href="tel:+917880008860" className="bg-medical-500 hover:bg-medical-400 text-white px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 transition-colors active:scale-95">
                   <PhoneCall size={20} />
-                  Call Us
-                </button>
+                  +91 7880008860
+                </a>
+                <a href="tel:+919826798175" className="bg-transparent border border-medical-500 text-white hover:bg-medical-800 px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 transition-colors active:scale-95">
+                  <PhoneCall size={20} />
+                  +91 9826798175
+                </a>
               </div>
             </div>
 

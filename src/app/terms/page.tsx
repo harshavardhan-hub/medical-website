@@ -77,8 +77,8 @@ export default function TermsPrivacyPage() {
             <div className="mt-8 p-6 bg-medical-900 rounded-2xl text-white">
               <h3 className="font-bold mb-2">Have questions?</h3>
               <p className="text-medical-200 text-sm mb-4">Our support team is here to help clarify any legal terms.</p>
-              <a href="mailto:legal@totalldawaabazaar.com" className="text-medical-400 font-medium hover:text-white transition-colors text-sm">
-                legal@totalldawaabazaar.com
+              <a href="mailto:tlcdindore@gmail.com" className="text-medical-400 font-medium hover:text-white transition-colors text-sm">
+                tlcdindore@gmail.com
               </a>
             </div>
           </aside>

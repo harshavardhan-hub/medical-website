@@ -23,7 +23,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-muted-foreground leading-relaxed">
-              Totall Dawaa Bazaar is your trusted partner in health and wellness. Providing world-class pharmaceutical care, medicines online, and healthcare products to the community since 1998.
+              Totall Dawaa Bazaar is your trusted partner in health and wellness. Providing world-class pharmaceutical care, medicines online, and healthcare products to the community since 2011.
             </p>
             <div className="flex gap-4">
               <SocialLink href="#" icon={<FacebookIcon />} />
@@ -63,15 +63,18 @@ export default function Footer() {
             <ul className="flex flex-col gap-4">
               <li className="flex items-start gap-3 text-muted-foreground">
                 <MapPin size={20} className="text-medical-500 shrink-0 mt-0.5" />
-                <span>123 Health Avenue, Medical District, NY 10001</span>
+                <span>64 EC Scheme No 94, Bombay Hospital Square, Ring Road, Indore</span>
               </li>
-              <li className="flex items-center gap-3 text-muted-foreground">
-                <Phone size={20} className="text-medical-500 shrink-0" />
-                <span>+1 (800) 123-4567</span>
+              <li className="flex items-start gap-3 text-muted-foreground">
+                <Phone size={20} className="text-medical-500 shrink-0 mt-0.5" />
+                <div className="flex flex-col gap-1">
+                  <a href="tel:+917880008860" className="hover:text-medical-500 transition-colors">+91 7880008860</a>
+                  <a href="tel:+919826798175" className="hover:text-medical-500 transition-colors">+91 9826798175</a>
+                </div>
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
                 <Mail size={20} className="text-medical-500 shrink-0" />
-                <span>care@totalldawaabazaar.com</span>
+                <a href="mailto:tlcdindore@gmail.com" className="hover:text-medical-500 transition-colors">tlcdindore@gmail.com</a>
               </li>
             </ul>
           </div>

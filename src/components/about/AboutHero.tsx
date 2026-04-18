@@ -27,7 +27,7 @@ export default function AboutHero() {
             style={{ willChange: "transform, opacity" }}
             className="text-lg md:text-xl text-muted-foreground leading-relaxed"
           >
-            Since 1998, we have been on a mission to provide accessible, genuine, and compassionate
+            Since 2011, we have been on a mission to provide accessible, genuine, and compassionate
             pharmaceutical care. We believe that health is not just about medicine, but about trust
             and continuous support.
           </motion.p>

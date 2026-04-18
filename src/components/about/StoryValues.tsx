@@ -64,16 +64,13 @@ export default function StoryValues() {
             className="prose prose-lg text-muted-foreground"
           >
             <h2 className="text-3xl font-bold text-foreground mb-6">Our Journey</h2>
-            <p>
-              It started with a simple observation: patients were often confused about their
-              medications and intimidated by the sterile environment of traditional pharmacies.
-              In 1998, Totall Dawaa Bazaar was founded with a vision to change this narrative.
-            </p>
-            <p>
-              We completely redesigned the pharmacy experience. By creating warm, welcoming spaces
-              and training our pharmacists to be proactive consultants rather than just dispensers,
-              we built a sanctuary for health right in the neighborhood.
-            </p>
+            <ul className="space-y-4 list-disc pl-5">
+              <li><strong>Started in 2011</strong> – First Outlet</li>
+              <li><strong>Expanded in 2016</strong> – Second Outlet</li>
+              <li><strong>Grew in 2019</strong> – Third Outlet</li>
+              <li><strong>Expanded in 2020</strong> – Fourth Outlet</li>
+              <li><strong>Latest Expansion in 2025</strong> – Fifth Outlet</li>
+            </ul>
           </motion.div>
 
           {/*
