@@ -19,14 +19,6 @@ export const metadata: Metadata = {
     description: "Totall Dawaa Bazaar is your trusted partner in health and wellness. World-class pharmacy services, healthcare products, and medicines online.",
     url: "https://www.edawabazar.com",
     siteName: "Totall Dawaa Bazaar",
-    images: [
-      {
-        url: "https://www.edawabazar.com/TotalLogo.png",
-        width: 1200,
-        height: 630,
-        alt: "Totall Dawaa Bazaar Logo",
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
@@ -34,7 +26,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Totall Dawaa Bazaar | Premium Medical Shop & Pharmacy",
     description: "Totall Dawaa Bazaar is your trusted partner in health and wellness. World-class pharmacy services, healthcare products, and medicines online.",
-    images: ["https://www.edawabazar.com/TotalLogo.png"],
   },
 };
 
